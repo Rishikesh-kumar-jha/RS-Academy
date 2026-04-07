@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RS Academy - Rise and Succeed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body class="bg-[#2a6f7f] text-gray-100 min-h-screen">
+
+<!-- ================= HERO ================= -->
+<section class="bg-gradient-to-r from-[#1f4e5f] to-[#0f2f3a] p-8">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-4">
+            <img src="logo.jpg" alt="RS Academy Logo" class="h-20 w-20 rounded-full">
+            <div>
+                <h1 class="text-4xl font-bold text-yellow-400">RS Academy</h1>
+                <p class="text-gray-300">Rise and Succeed</p>
+            </div>
+        </div>
+
+        <!-- TAGLINE -->
+        <p class="hidden md:block text-lg text-gray-300 max-w-md text-right">
+            Transforming students into scholars with expert guidance
+        </p>
+
+    </div>
+</section>
+
+
+<!-- ================= OUR CLASSES ================= -->
+<section class="container mx-auto px-6 py-14">
+    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">
+        Our Classes
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <button onclick="showClass(8)" class="class-btn">Class 8</button>
+        <button onclick="showClass(9)" class="class-btn">Class 9</button>
+        <button onclick="showClass(10)" class="class-btn">Class 10</button>
+        <button onclick="showClass(11)" class="class-btn">Class 11</button>
+        <button onclick="showClass(12)" class="class-btn">Class 12</button>
+        <button onclick="showClass('CUET')" class="class-btn">CUET</button>
+    </div>
+</section>
+
+<!-- ================= CLASS DETAILS ================= -->
+<section id="class-details" class="hidden container mx-auto px-6 mb-16">
+    <div class="bg-gray-900 p-8 rounded-xl">
+        <h2 id="class-title" class="text-3xl font-bold text-yellow-400 mb-8 text-center"></h2>
+        <div id="subjects" class="grid md:grid-cols-3 gap-6"></div>
+    </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="container mx-auto px-6 mb-16">
+    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">
+        Our Gallery
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="coach1.jpg" class="gallery-img">
+        <img src="coach5.jpg" class="gallery-img">
+        <img src="coach3.jpg" class="gallery-img">
+        <img src="coach4.jpg" class="gallery-img">
+    </div>
+</section>
+
+<!-- ================= ENQUIRY ================= -->
+<section id="enquiry" class="container mx-auto px-6 mb-16">
+    <div class="bg-gray-900 p-8 rounded-xl grid md:grid-cols-2 gap-8">
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Information</h3>
+            <p>+91 97739 36546</p>
+            <p>info.rsacademyofcommerce@gmail.com</p>
+            <p>Mon-Sat: 8 AM - 8 PM</p>
+        </div>
+
+        <form 
+  	     action="https://formsubmit.co/469440522db8796de2b03a67673b366b"
+  	     method="POST"
+  	     class="space-y-4">
+
+            <input class="input" name="name" placeholder="Your Name" required>
+	    <input class="input" name="email" placeholder="Your Email" required>
+	    <input class="input" name="phone" placeholder="Phone Number" required>
+	    <input type="hidden" name="_subject" value="New Enquiry - RS Academy">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+	    <button type="submit" class="submit-btn">
+	    Submit Enquiry
+	    </button>
+
+        </form>
+    </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section class="container mx-auto px-6 mb-16">
+
+  <h2 class="text-3xl font-bold mb-8 text-center text-yellow-400">
+    Our Location
+  </h2>
+
+  <div class="bg-gray-900 rounded-xl overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.173562340873!2d77.2424563!3d28.5044254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce13ee82d3933%3A0x8660d4f60bf2d5f4!2sRS%20Academy%20of%20Commerce!5e0!3m2!1sen!2sin!4v1768143124667!5m2!1sen!2sin"
+      width="100%"
+      height="400"
+      style="border:0; display:block;"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-[#0f2f3a] text-center py-8 text-gray-400">
+    <p class="font-semibold text-yellow-400">RS Academy</p>
+    <p class="text-sm mt-2">© 2026 All Rights Reserved</p>
+  </footer>
+  
+
+<!-- ================= STYLES ================= -->
+<style>
+.class-btn{
+    background:#111827;
+    padding:1rem;
+    border-radius:1.25rem;
+    font-weight:bold;
+    color:#facc15;
+    border:1px solid #374151;
+    transition:.2s;
+}
+.class-btn:hover{
+    background:#1f2937;
+    transform:scale(1.05);
+}
+
+.gallery-img{
+    border-radius:1rem;
+    transition:.2s;
+}
+.gallery-img:hover{
+    transform:scale(1.05);
+}
+
+.input{
+    width:100%;
+    padding:.75rem;
+    border-radius:.75rem;
+    background:#1f2937;
+}
+
+.submit-btn{
+    width:100%;
+    padding:.75rem;
+    border-radius:.75rem;
+    background:#facc15;
+    color:black;
+    font-weight:bold;
+}
+</style>
+
+<!-- ================= SCRIPT ================= -->
+<script>
+const classInfo = {
+    8: [
+        {s:"Maths", t:"Sandeep Kumar", q:"xyz"},
+        {s:"Science", t:"Sandeep Kumar", q:"xyz"}
+    ],
+    9: [
+        {s:"Maths", t:"Sandeep Kumar", q:"xyz"},
+        {s:"Physics", t:"Sandeep Kumar", q:"xyz"}
+    ],
+    10: [
+        {s:"Maths", t:"RishiKesh kuamr jha", q:"xyz"},
+        {s:"Science", t:"RishiKesh kumar jha", q:"xyz"},
+        {s:"Economics", t:"RishiKesh kumar jha", q:"xyz"}
+    ],
+    11: [
+        {s:"Economics", t:"RishiKesh kumar jha", q:"xyz"},
+        {s:"Accounts", t:"Rishikesh kumar jha", q:"xyz"}
+    ],
+    12: [
+        {s:"Economics", t:"RishiKesh kumar jha", q:"xyz"},
+        {s:"Accounts", t:"RishiKesh kumar jha", q:"xyz"}
+    ],
+    CUET: [
+        {s:"Economics", t:"RishiKesh kumar jha", q:"xyz"},
+        {s:"Maths", t:"RishiKesh kumar jha", q:"xyz"}
+    ]
+};
+
+function showClass(cls){
+    document.getElementById("class-details").classList.remove("hidden");
+    document.getElementById("class-title").innerText = `Class ${cls}`;
+    const box = document.getElementById("subjects");
+    box.innerHTML = "";
+
+    classInfo[cls].forEach(x=>{
+        box.innerHTML += `
+            <div class="bg-gray-800 p-5 rounded-xl">
+                <h3 class="text-xl font-bold text-yellow-300">${x.s}</h3>
+                <p class="mt-2">Teacher: ${x.t}</p>
+                <p class="text-gray-400">Qualification: ${x.q}</p>
+            </div>`;
+    });
+
+    document.getElementById("class-details")
+        .scrollIntoView({behavior:"smooth"});
+}
+
+feather.replace();
+</script>
+<nav class="sticky top-0 z-50 bg-[#0f2f3a]/90 backdrop-blur border-b border-white/10">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+  
+      <div class="flex items-center gap-3">
+        <img src="logo.jpg" class="h-10 w-10 rounded-full">
+        <span class="font-bold text-yellow-400 text-lg">RS Academy</span>
+      </div>
+  
+      <div class="hidden md:flex gap-8 text-gray-300">
+        <a href="#" class="hover:text-yellow-400">Home</a>
+        <a href="#classes" class="hover:text-yellow-400">Classes</a>
+        <a href="#gallery" class="hover:text-yellow-400">Gallery</a>
+        <a href="#enquiry" class="hover:text-yellow-400">Contact</a>
+      </div>
+  
+    </div>
+  </nav>
+  
+</body>
+</html>
