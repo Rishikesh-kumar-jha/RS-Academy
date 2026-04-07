@@ -43,12 +43,12 @@
     </h2>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-        <button onclick="showClass(8)" class="class-btn">Class 8</button>
-        <button onclick="showClass(9)" class="class-btn">Class 9</button>
-        <button onclick="showClass(10)" class="class-btn">Class 10</button>
-        <button onclick="showClass(11)" class="class-btn">Class 11</button>
-        <button onclick="showClass(12)" class="class-btn">Class 12</button>
-        <button onclick="showClass('CUET')" class="class-btn">CUET</button>
+        <button onclick="showClass(8)" class="class-btn">Class 1st-8th</button>
+        <button onclick="showClass(9)" class="class-btn">Class 9th</button>
+        <button onclick="showClass(10)" class="class-btn">Class 10th</button>
+        <button onclick="showClass(11)" class="class-btn">Class 11th</button>
+        <button onclick="showClass(12)" class="class-btn">Class 12th</button>
+        <button onclick="showClass('Humanities & Science stream')" class="class-btn">Humanities & Science stream</button>
     </div>
 </section>
 
@@ -178,29 +178,30 @@
 <script>
 const classInfo = {
     8: [
-        {s:"Maths", t:"Sandeep Kumar" },
-        {s:"Science", t:"Sandeep Kumar" }
+        {s:"All Subject", t:"Sandeep Kumar" }
     ],
     9: [
         {s:"Maths", t:"Sandeep Kumar" },
-        {s:"Physics", t:"Sandeep Kumar"}
+        {s:"Science", t:"Sandeep Kumar"},
+		{s:"Social Science", t:"Sandeep kumar"}
     ],
     10: [
-        {s:"Maths", t:"RishiKesh kuamr jha"},
-        {s:"Science", t:"RishiKesh kumar jha"},
-        {s:"Economics", t:"RishiKesh kumar jha"}
+        {s:"Maths", t:"RJ sir"},
+        {s:"Science", t:"RJ sir"},
+        {s:"Social Science", t:"RJ sir"}
     ],
     11: [
-        {s:"Economics", t:"RishiKesh kumar jha"},
-        {s:"Accounts", t:"Rishikesh kumar jha"}
+        {s:"Economics", t:"RJ sir"},
+        {s:"Accounts", t:"RJ sir"},
+		{s:"Maths", t:"RJ sir"}
     ],
     12: [
-        {s:"Economics", t:"RishiKesh kumar jha"},
-        {s:"Accounts", t:"RishiKesh kumar jha"}
+        {s:"Economics", t:"RJ sir"},
+        {s:"Accounts", t:"RJ sir"},
+		{s:"Maths", t:"RJ sir"}
     ],
-    CUET: [
-        {s:"Economics", t:"RishiKesh kumar jha"},
-        {s:"Maths", t:"RishiKesh kumar jha"}
+    "Humanities & Science stream": [
+		{ s: "Science and Humanities also available", t: "Limited seats only"}
     ]
 };
 
