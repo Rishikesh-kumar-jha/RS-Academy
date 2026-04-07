@@ -248,7 +248,7 @@ function showClass(cls){
         box.innerHTML += `
             <div class="bg-gray-800 p-5 rounded-xl">
                 <h3 class="text-xl font-bold text-yellow-300">${x.s}</h3>
-                <p class="mt-2">Teacher: ${x.t}</p>
+                ${x.t ? `<p class="mt-2">Teacher: ${x.t}</p>` : ""}
             </div>`;
     });
 
