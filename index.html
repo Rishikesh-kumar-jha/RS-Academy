@@ -95,7 +95,7 @@
         Our Gallery
     </h2>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <img src="coach1.jpg" class="gallery-img">
         <img src="coach5.jpg" class="gallery-img">
         <img src="coach3.jpg" class="gallery-img">
@@ -187,11 +187,15 @@
 }
 
 .gallery-img{
-    border-radius:1rem;
-    transition:.2s;
+    width: 100%;
+    height: 220px;        /* fixed height for uniformity */
+    object-fit: cover;    /* crops image stretching */
+    border-radius: 1rem;
+    transition: .3s;
 }
+
 .gallery-img:hover{
-    transform:scale(1.05);
+    transform: scale(1.05);
 }
 
 .input{
